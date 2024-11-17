@@ -43,6 +43,7 @@ button {
 .underline {
   text-decoration: underline;
 }
+strong,
 .bold {
   font-weight: 700;
 }
@@ -237,6 +238,7 @@ button {
   padding: 0;
   margin-top: 38px;
   margin-left: -14px;
+  max-width: 1120px;
 }
 
 .facts__item {
@@ -330,42 +332,40 @@ button {
   text-align: center;
   margin-top: 26px;
 }
-
+.how-section__content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  justify-content: space-between;
+  margin-top: 52px;
+}
+.how-section__content {
+  flex: 1.5;
+}
+.how-section__img {
+  flex: 1;
+  margin-bottom: 8%;
+}
 .how-section__description {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .how-section__list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
+  padding-left: 2.25rem;
+  margin-top: 24px;
 }
-
-.how-section__list-item {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
 .how-section__note,
-.how-section__additional {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
+.how-section__additional,
 .how-section__comparison {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+  margin-top: 24px;
 }
 
 .how-section__benefits {
-  background-color: #e0f7fa;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
+  padding: 48px 50px 55px;
+  margin-top: 55px;
+  border: 2px solid #82ca80;
+  border-radius: 25px;
+  background-color: #f4fbf3;
 }
 
 .how-section__benefits-list {
@@ -374,29 +374,36 @@ button {
 }
 
 .how-section__benefit-item {
-  font-size: 1rem;
   color: #00796b;
-  margin-bottom: 1rem;
+  margin-bottom: 22px;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.how-section__benefit-item:last-child {
+  margin-bottom: 0;
+}
+.how-section__benefit-item::before {
+  content: '';
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url('../images/check-circle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .how-section__conclusion {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-top: 48px;
+  text-decoration: underline;
 }
 
 .how-section__average-time,
 .how-section__rights,
 .how-section__source-code {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-}
-
-.how-section__average-time strong,
-.how-section__rights strong,
-.how-section__source-code strong {
-  font-weight: bold;
+  margin-top: 22px;
 }
 
 /* Responsive styles */
@@ -424,4 +431,103 @@ button {
     font-size: 1rem;
   }
 
+} */
+/* =================== Investment Section ================= */
+.investment-section {
+  margin-top: 62px;
+}
+
+.investment-section__heading {
+  font-size: 3.25rem;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.investment-section__highlight {
+  color: #80c754;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.investment-section__subheading {
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.investment-section__emphasis {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.investment-section__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 76px;
+}
+
+.investment-section__card {
+  flex: 1;
+  border-radius: 25px;
+  border: 2px solid #82ca80;
+}
+
+.investment-section__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.investment-section__image--1 {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+.investment-section__image--2 {
+  margin-top: -2px;
+}
+.investment-section__card__content {
+  padding: 4px 46px 50px;
+}
+.investment-section__card-text,
+.investment-section__list li {
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+.investment-section__list li::marker {
+  font-size: 0.85rem;
+}
+
+.investment-section__card-text {
+  margin-top: 22px;
+}
+
+.investment-section__list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 22px;
+}
+
+.investment-section__list li {
+  padding-inline-start: 4px;
+}
+
+.investment-section__cta {
+  margin-top: 76px;
+}
+.investment-section__cta .cta {
+  padding: 1.35rem 2.9rem 2rem;
+}
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+  .investment-section__cards {
+    flex-direction: column;
+  }
+
+  .investment-section__card {
+    margin-bottom: 2rem;
+  }
 } */
