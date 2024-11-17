@@ -11,6 +11,11 @@ html {
   font-size: 1rem;
   line-height: 1.5;
 }
+@media (max-width: 1023px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -37,11 +42,17 @@ button {
   font: inherit;
   cursor: pointer;
 }
+img {
+  max-width: 100%;
+}
 .semi-bold {
   font-weight: 600;
 }
 .underline {
   text-decoration: underline;
+}
+.text-green {
+  color: #26bc30;
 }
 strong,
 .bold {
@@ -531,3 +542,92 @@ strong,
     margin-bottom: 2rem;
   }
 } */
+/* ========================= Streams Section ========================= */
+.streams {
+  margin-top: 52px;
+}
+.streams__title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  text-align: center;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.01em;
+}
+
+.streams__highlight {
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1.83;
+  letter-spacing: -0.01em;
+  background: #f0d476;
+  text-align: center;
+  width: fit-content;
+  margin: 12px auto 0;
+  padding: 0 1.375rem;
+}
+
+.streams__content {
+  margin-top: 92px;
+}
+
+.streams__text {
+}
+.streams__text p {
+  margin-top: 22px;
+}
+.streams__text .highlight {
+  background-color: #ffd54a;
+}
+.streams__image {
+  float: right;
+  margin-top: 17px;
+  margin-left: 20px;
+  border-radius: 1.5625rem;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+}
+
+/* ======================== Mastermind Section ========================*/
+.mastermind {
+  margin-top: 65px;
+}
+
+.mastermind__title {
+  text-align: center;
+  font-size: 3.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+}
+
+.mastermind__content {
+  margin-top: 50px;
+}
+.mastermind__content p {
+  margin-top: 22px;
+}
+.mastermind__image {
+  border-radius: 25px;
+  border: 2px solid #9a9de1;
+  background: #f0eeff;
+  float: right;
+  max-width: 50%;
+  margin-left: 36px;
+  padding: 96px 42px 122px;
+  margin-top: 14px;
+}
+.mastermind__text--lh {
+  margin-top: 14px;
+  line-height: 2.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mastermind__content {
+  }
+}
