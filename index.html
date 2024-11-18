@@ -48,11 +48,11 @@
         >
         <p class="intro__subheadline">Now You’ll Have A <span class="semi-bold">High Quality and Brand New Software to Sell All The Time.</span></p>
         <div class="video__wrapper">
-          <video poster="./assets/images/video-thumb.jpg">
-            <source src="movie.mp4" type="video/mp4" />
+          <video poster="./assets/images/video-thumb.jpg" id="video">
+            <source src="./assets/images/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <button class="play-btn">
+          <button class="play-btn" id="playBtn">
             <img src="./assets/images/play-btn.svg" alt="play button" />
           </button>
         </div>
@@ -132,7 +132,11 @@
             <p class="how-section__comparison"> This is better than having your own in-house software development team or hiring external contractors. </p>
           </div>
           <div class="how-section__img">
-            <img src="./assets/images/Other-01.png" loading="lazy" alt="" />
+            <picture>
+              <source srcset="./assets/images/Other-01.webp 1x, ./assets/images/Other-01-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/Other-01.png 1x, ./assets/images/Other-01-2x.png.png 2x" type="image/png" />
+              <img src="./assets/images/Other-01.png" loading="lazy" alt="" />
+            </picture>
           </div>
         </div>
 
@@ -155,7 +159,11 @@
         <div class="investment-section__cards">
           <!-- Left Card -->
           <div class="investment-section__card">
-            <img src="./assets/images/Other-13.png" loading="lazy" alt="Software Idea Illustration" class="investment-section__image investment-section__image--1" />
+            <picture>
+              <source srcset="./assets/images/Other-13.webp 1x, ./assets/images/Other-13-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/Other-13.png 1x, ./assets/images/Other-13-2x.png 2x" type="image/png" />
+              <img src="./assets/images/Other-13.png" loading="lazy" alt="Software Idea Illustration" class="investment-section__image investment-section__image--1" />
+            </picture>
             <div class="investment-section__card__content">
               <p class="investment-section__card-text">Think about it...</p>
               <p class="investment-section__card-text"> A simple software typically costs <strong>$50,000</strong>, <strong>$80,000</strong>, and even <strong>$100,000+</strong> to build. </p>
@@ -172,7 +180,11 @@
 
           <!-- Right Card -->
           <div class="investment-section__card">
-            <img src="./assets/images/Other-03.png" loading="lazy" alt="Laptop Illustration" class="investment-section__image investment-section__image--2" />
+            <picture>
+              <source srcset="./assets/images/Other-03.webp 1x, ./assets/images/Other-03-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/Other-03.png 1x, ./assets/images/Other-03-2x.png 2x" type="image/png" />
+              <img src="./assets/images/Other-03.png" loading="lazy" alt="Laptop Illustration" class="investment-section__image investment-section__image--2" />
+            </picture>
             <div class="investment-section__card__content">
               <p class="investment-section__card-text"><strong>But for a limited time only...</strong></p>
               <p class="investment-section__card-text"> If you join the Big Software Mastermind for a low <strong>one-time payment</strong> made only once every year, you'll get <strong>2 fully built software</strong> with their source code delivered to your inbox. </p>
@@ -191,7 +203,11 @@
         <p class="streams__highlight">2, 3, 5, or even 10 streams of income!</p>
         <div class="streams__content">
           <div class="streams__text">
-            <img class="streams__image" loading="lazy" src="./assets/images/streams-image.jpg" alt="Income illustration" />
+            <picture>
+              <source srcset="./assets/images/streams-image.webp 1x, ./assets/images/streams-image-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/streams-image.jpg 1x, ./assets/images/streams-image-2x.jpg 2x" type="image/jpeg" />
+              <img src="./assets/images/streams-image.png" class="streams__image" loading="lazy" alt="Income illustration" />
+            </picture>
             <p><strong>Let’s do the math… </strong></p>
             <p>You already have our <strong>Branchify DFY software kit,</strong> which is great.</p>
             <p> Let’s assume that you fail to make the big break, you totally bonk it and <strong>making just $3,000 per month selling the software to customers.</strong> </p>
@@ -207,7 +223,11 @@
       <section class="mastermind">
         <h2 class="mastermind__title">So, how much will the mastermind cost me?</h2>
         <div class="mastermind__content">
-          <img class="mastermind__image" loading="lazy" src="./assets/images/Other-16.png" alt="" />
+          <picture>
+            <source srcset="./assets/images/Other-16.webp 1x, ./assets/images/Other-16-2x.webp 2x" type="image/webp" />
+            <source srcset="./assets/images/Other-16.png 1x, ./assets/images/Other-16-2x.png 2x" type="image/png" />
+            <img src="./assets/images/Other-16.png" loading="lazy" alt="" class="mastermind__image" />
+          </picture>
           <p>
             <strong><span class="underline">It will cost you next to nothing</span> compared to what you’ll spend on the alternative</strong> (which still carries risk of failure)
           </p>
@@ -340,7 +360,11 @@
             <p class="guarantee__description"> You can buy with 100% confidence because we're guaranteeing your investment today. If we don't deliver the software products we promised you every year, we'll refund your money back, no stress. </p>
           </div>
           <div class="guarantee__badge">
-            <img src="./assets/images/satisfaction-badge.png" loading="lazy" alt="Satisfaction Guarantee" class="guarantee__badge-image" />
+            <picture>
+              <source srcset="./assets/images/satisfaction-badge.webp 1x, ./assets/images/satisfaction-badge-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/satisfaction-badge.png 1x, ./assets/images/satisfaction-badge-2x.png 2x" type="image/png" />
+              <img src="./assets/images/satisfaction-badge.png" loading="lazy" alt="Satisfaction Guarantee" class="guarantee__badge-image" />
+            </picture>
           </div>
         </div>
       </section>
@@ -434,6 +458,10 @@
             Do not skip this offer or you’ll never see it again
             <span class="offer__cta"><span class="green">ACT NOW</span> - One Time Offer!</span>
           </h2>
+          <picture>
+            <source srcset="./assets/images/offer.webp" type="image/webp" />
+            <img src="./assets/images/offer.jpg" loading="lazy" alt="" class="offer__warning-bg" />
+          </picture>
         </div>
         <div class="offer__details">
           <div class="offer__content">
@@ -443,7 +471,11 @@
             <p class="offer__text">So make a choice now and make it wisely. <strong>You’ll never see anything this good again</strong>, a private software mastermind you can become a member of today and be guaranteed to receive at least 2 done-for-you software complete with their source code every year. </p>
           </div>
           <div class="offer__image">
-            <img src="./assets/images/limited-offer.png" loading="lazy" alt="Limited Offer" class="offer__image-img" />
+            <picture>
+              <source srcset="./assets/images/limited-offer.webp 1x, ./assets/images/limited-offer-2x.webp 2x" type="image/webp" />
+              <source srcset="./assets/images/limited-offer.png 1x, ./assets/images/limited-offer-2x.png 2x" type="image/png" />
+              <img src="./assets/images/limited-offer.png" loading="lazy" alt="Limited Offer" class="offer__image-img" />
+            </picture>
           </div>
         </div>
         <div class="offer__actions">

@@ -136,6 +136,7 @@ strong,
   border: 8px solid #82ca80;
   border-radius: 25px;
 }
+
 .play-btn {
   position: absolute;
   top: 50%;
@@ -145,6 +146,9 @@ strong,
   line-height: 0;
   border: 0;
   background-color: transparent;
+}
+#playBtn.hide {
+  display: none;
 }
 .cta {
   font-family: 'Inter', sans-serif;
@@ -1092,10 +1096,19 @@ p.mastermind__text--lh {
 .offer__warning {
   color: #fff;
   border-radius: 25px 25px 0px 0px;
-  background: url(../images/offer.jpg) no-repeat;
   padding: 52px 16px 76px;
-  background-size: cover;
-  background-position: center bottom;
+  position: relative;
+}
+.offer__warning-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+  object-position: bottom center;
+  z-index: -1;
 }
 
 .offer__warning-title {
