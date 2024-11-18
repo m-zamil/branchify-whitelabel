@@ -1238,11 +1238,16 @@ p.mastermind__text--lh {
     padding: 0 40px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   html {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   .main {
     padding: 0 20px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 0.45rem;
   }
 }
