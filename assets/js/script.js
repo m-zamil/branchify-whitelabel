@@ -55,6 +55,7 @@ function updateElement(id, value) {
 const countdownDate = new Date();
 countdownDate.setDate(countdownDate.getDate() + 7); // 7 days from today
 startCountdown(countdownDate);
+
 /* Video play pause button */
 // Select the button and video elements
 const playBtn = document.getElementById('playBtn');
@@ -73,11 +74,12 @@ playBtn.addEventListener('click', function () {
   }
 });
 
-video.addEventListener('click', function () {
-  if (video.play) {
-    video.pause();
-    playBtn.style.display = 'block';
-  }
+video.addEventListener('play', function () {
+  playBtn.style.display = 'none';
+});
+
+video.addEventListener('pause', function () {
+  playBtn.style.display = 'block';
 });
 
 // Optional: Show the button again when the video ends (in case it was hidden)
