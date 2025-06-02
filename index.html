@@ -587,13 +587,12 @@
     </main>
     <script>
       const videoPoster = document.getElementById("video");
-      const isMobile = window.matchMedia("(max-width: 640px)").matches;
+      const isDesktop = window.matchMedia("(min-width: 640px)").matches;
 
-      const posterUrl = isMobile
-        ? "./assets/images/video-thumb-small.webp" // ~small version
+      const posterUrl = isDesktop
+        ? "" // ~small version
         : "./assets/images/video-thumb.webp"; // larger version
-
-      videoPoster.setAttribute("poster", posterUrl);
+      isDesktop ? videoPoster.setAttribute("poster", posterUrl) : "";
     </script>
     <script src="./assets/js/script.js"></script>
   </body>
