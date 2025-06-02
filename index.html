@@ -585,15 +585,6 @@
         </div>
       </section>
     </main>
-    <script>
-      const videoPoster = document.getElementById("video");
-      const isDesktop = window.matchMedia("(min-width: 640px)").matches;
-
-      const posterUrl = isDesktop
-        ? "" // ~small version
-        : "./assets/images/video-thumb.webp"; // larger version
-      isDesktop ? videoPoster.setAttribute("poster", posterUrl) : "";
-    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
